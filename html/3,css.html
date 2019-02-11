@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> </title>
+        <style>
+        div#test1 p{
+            color: red;
+        }
+        div#test2 > p{
+            color: red;
+        }
+        div#test3 p#p1 + p{
+            color: red;
+        }
+        div#test4 p#p1 ~ p{
+            color: red;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- 하위 형태 선택자 -->
+        <div id="test1">
+            <p>문단 태그입니다.</p>
+            <div>
+                <p>문단 태그입니다.</p>
+            </div>
+        </div><br>
+
+        <!-- 자식 형태 선택자 -->
+        <div id="test2">
+                <p>문단 태그입니다.</p>
+                <div>
+                    <p>문단 태그입니다.</p>
+                </div>
+        </div><br>
+
+        <!-- 인접 형제 선택자 -->
+        <div id="test3">
+            <p>문단 태그입니다.</p>
+            <p id="p1">문단 태그입니다.</p>
+            <p>문단 태그입니다.</p>
+            <p>문단 태그입니다.</p>             
+        </div><br>
+
+        <!-- 일반 형제 선택자 -->
+        <div id="test4">
+                <p>문단 태그입니다.</p>
+                <p id="p1">문단 태그입니다.</p>
+                <p>문단 태그입니다.</p>
+                <p>문단 태그입니다.</p>             
+            </div>
+    </body>
+</html>

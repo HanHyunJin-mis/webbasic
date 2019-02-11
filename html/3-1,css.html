@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>3,css 과제</title>
+        <style>
+            #p_tag + p{
+                color: red;
+            }
+            .table thead{
+                color: red;
+            }
+            .table tbody tr{
+                color: blue;
+            }
+            .table tbody tr + tr{
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="p_tag">p태그 입니다.</p>
+        <p>p태그 입니다.</p>
+        <p>p태그 입니다.</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>과목명</th>
+                    <th>학점</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>데이터베이스 설계</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td>디지털 비즈니스 기술</td>
+                    <td>A0</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
