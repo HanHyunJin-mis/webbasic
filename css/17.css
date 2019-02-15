@@ -1,0 +1,32 @@
+div#wrap{
+    border: 3px solid red;
+    padding: 100px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+/* keyframes - css에서 애니메이션을 사용하기 위한 키워드 */
+/* from은 애니메이션을 시작할 때 어떤 상태로 시작할 것인가 */
+/* to는 애니메이션이 끝날 때 어떤 상태로 끝이 나는가 */
+
+div.over > img{
+    animation-name: move;
+    animation-duration: 3s;
+    /* 애니메이션이 끝나도 원래대로 돌아가지 않게 하는 것 */
+    animation-fill-mode: forwards;
+}
+
+@keyframes move{
+    from{
+        /* 투명도 0~1 */
+        opacity: 0.2;
+    }
+    to{
+        opacity: 1;
+        /* 이미지가 올라가는 효과를 만듬 */
+        margin-top: -15%;
+    }
+}
